@@ -1,0 +1,41 @@
+:root{
+    --base-color : #37517E;
+}
+.hero-container{
+    background-color: var(--base-color);
+}
+nav a{
+    color: white !important;
+}
+.dropdown-menu a{
+    color: black !important;
+}
+.animate-image{
+    animation: move 1.2s ease-in-out infinite alternate;
+}
+@keyframes move{
+    from{
+        transform: translateY(-10px);
+    }to{
+       transform: translateY(10px);
+    }
+}
+.text-blue{
+    color: var(--base-color) !important;
+}
+.gray{
+    width: 150px;
+    height: 2px;
+    background-color:lightgrey;
+    margin: auto;
+    position: relative;
+}
+.blue{
+    width: 70px;
+    height: 3px;
+    background-color:var(--bs-info);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
