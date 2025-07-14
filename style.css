@@ -23,6 +23,18 @@ nav a{
 .text-blue{
     color: var(--base-color) !important;
 }
+.hover-info{
+    transition: all 0.4s;
+}
+.hover-info:hover{
+    color: var(--bs-info) !important;
+}
+.my-btn:active{
+    scale: 0.95;
+}
+.text-sm{
+    font-size: 0.8rem !important;
+}
 .gray{
     width: 150px;
     height: 2px;
