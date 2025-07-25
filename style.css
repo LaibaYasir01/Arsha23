@@ -11,7 +11,30 @@ nav a{
     color: black !important;
 }
 .animate-image{
-    animation: move 1.2s ease-in-out infinite alternate;
+    animation: move 1.2s ease-in-out 
+    infinite alternate;
+}
+.work-card:hover img{
+     scale: 1.1;
+}
+.work-card:hover .content{
+     transform: translateY(-5px);
+}
+.work-card:hover{
+     transform: translateY(-5px);
+}
+.work-card:hover{
+     transition: all 0.4s;
+}
+.work-card img{
+     transition: all 0.4s;
+}
+.work-card .content{
+     transition: all 0.4s;
+}
+.work-card h2{
+    z-index: 333;
+    position: relative;
 }
 @keyframes move{
     from{
@@ -51,21 +74,22 @@ nav a{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-  .steps-number {
-    position: -30;
-    padding: 2rem;
-    left: 30px;
-    top: -30px;
-    width: 60px;
-    height: 60px;
-    background: #268dee !important;
-    color:white !important;
-    border-radius: 50%;
-    font-family: var(--heading-font);
-    font-size: 24px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease-in-out;
-}
+ .imge-container{
+    background:linear-gradient(to right,rgba(68,92,125,0.5),rgba(68,92,125,0.7)) , url("https://builder.bootstrapmade.com/static/img/bg/bg-8.webp") fixed;
+ }
+ 
+ .img-container{
+    overflow: hidden;
+ }
+
+
+ .overlay{
+    bottom: 0;
+    transform: translateY(80px);
+    transition: all 0.2s;
+    background: rgba(255,255,255,0.8);
+ }
+
+ .img-container:hover .overlay{
+    transform: translateY(0);
+ }
